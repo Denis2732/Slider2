@@ -23,11 +23,14 @@ backBtn.disabled = true;
 
 function onBackBtn() {
 	currentImgIndex--;
-	nextBtn.disabled = false;
-	/*if(currentImgIndex <= 0){
+	
+	/*
+	//Первый вариант остановки слайдера 
+	if(currentImgIndex <= 0){
 		currentImgIndex = 0;
 	}*/
-
+	
+	nextBtn.disabled = false;
 	if(currentImgIndex === 0){
 		backBtn.disabled = true;
 	}
@@ -37,7 +40,9 @@ function onBackBtn() {
 function onNextBtn() {
 	currentImgIndex++;
 
-	/*if(currentImgIndex >= 4){
+	/*
+	//Первый вариант остановки слайдера 
+	if(currentImgIndex >= 4){
 		currentImgIndex = 4;
 	}*/
 
